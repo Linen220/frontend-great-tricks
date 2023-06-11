@@ -16,5 +16,8 @@ body {
 }
 
 .box {
-    background-color: blue;
+    position: relative;
+    width: 370px;
+    height: 450px;
+    background-color: red;
 }
