@@ -21,6 +21,7 @@ body {
     height: 450px;
     background-color: #1c1c1c;
     border-radius: 50px 5px;
+    overflow: hidden;
 }
 
 .box::before {
@@ -32,6 +33,49 @@ body {
     height: 450px;
     background: linear-gradient(60deg,transparent,#45f3ff,#45f3ff);
     
+    /* El origen de la transformación es el punto alrededor del cual 
+    se aplica una transformación. Por ejemplo, el origen de 
+    transformación de la rotate()función es el centro de rotación.*/
     transform-origin: bottom right;
-    animation: animate;
+
+    /* Shorthand nombre dek keyframe, duracion, velocidad, numero de
+    de veces a ejecutar */
+    animation: animate 6s linear infinite;
+}
+
+.box::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 370px;
+    height: 450px;
+    background: linear-gradient(60deg,transparent,#d9138a,#d9138a);
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: 3s;
+}
+
+form {
+    position: absolute;
+    inset: 2px;
+    border-radius: 50px 5px;
+    background-color: #28282d;
+    z-index: 1;
+    padding: 30px 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    /* GAAAAAAAAAAAA */
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
