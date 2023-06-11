@@ -31,5 +31,7 @@ body {
     width: 370px;
     height: 450px;
     background: linear-gradient(60deg,transparent,#45f3ff,#45f3ff);
+    
     transform-origin: bottom right;
+    animation: animate;
 }
