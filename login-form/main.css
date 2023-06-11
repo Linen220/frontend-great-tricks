@@ -19,5 +19,13 @@ body {
     position: relative;
     width: 370px;
     height: 450px;
+    background-color: #1c1c1c;
+    border-radius: 50px 5px;
+}
+
+.box::before {
+    content: '';
+    position: absolute;
     background-color: red;
+    
 }
