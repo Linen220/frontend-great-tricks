@@ -68,7 +68,74 @@ form {
 }
 
 h2 {
-    /* GAAAAAAAAAAAA */
+    color: #45f3ff;
+    font-size: 35px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.input-box {
+    position: relative;
+    width: 300px;
+    margin-top: 35px;
+}
+.input-box input {
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #23242a;
+    font-size: 1rem;
+    letter-spacing: .05rem;
+    z-index: 10;
+}
+
+.btn {
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background: #45f3ff;
+    padding: 5px;
+    margin-top: 40px;
+    border-radius: 90px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.btn:active {
+    background: linear-gradient(90deg, #45f3ff, #d9138a);
+    opacity: .8;
+}
+.input-box label {
+    position: absolute;
+    left: 0;
+    padding: 20px 10px 10px;
+    font-size: 1rem;
+    color: #8f8f8f;
+    pointer-events: none;
+    letter-spacing: .05rem;
+    transition: .5s;
+}
+
+.input-box input:valid ~ label, 
+.input-box input:focus ~ label {
+    color: #45f3ff;
+    transform: translateX(-10px) translateY(-30px);
+    font-size: .75rem;
+}
+
+.input-box i {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #45f3ff;
+    border-radius: 4px;
+    transition: .5s;
+    pointer-events: none;
+    z-index: 9;
 }
 
 @keyframes animate {
