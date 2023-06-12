@@ -1,6 +1,6 @@
 # Responsive Animated Login Form
 
-### Link
+## Link
 
 - [Live Site](https://linen220-animated-form-login.netlify.app/)
 
